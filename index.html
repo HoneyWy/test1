@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<meta charset="UTF-8">
+		<!--<link rel="stylesheet" href="normalize.css">-->
+		<link rel="stylesheet" href="bird.css">
+		<title>memoryCard</title>
+	</head>
+	<body>
+		<!--游戏结束产生遮盖层禁止游戏-->
+		<div id="mask" class="mask_every">
+			<!--<img src="images/boom.gif"  alt="">-->
+			<div class="defau mask_info">
+				时间到游戏结束！
+			</div>
+		</div>
+		<div id="success" class="mask_every">
+			<div class="succ mask_info">
+				恭喜游戏成功!
+			</div>
+		</div>
+		<!-----暂停游戏----->
+		<div id="pause" class="mask_every">
+			<div class="pause mask_info">
+				游戏暂停中...
+			</div>
+		</div>
+		<section>
+			<div id="container">
+				<!--背景-->
+					<div id="birdImg" class="birdImg lf" >
+					</div>
+				<!----控制按钮部分----->
+				<div id="control">
+					<ul id="bubbling">
+						<li class="score">Score：0</li>
+						<li >开始游戏</li>
+						<li>暂停游戏</li>
+						<li>继续游戏</li>
+						<li>退出游戏</li>
+						<!--倒计时--->
+						<li id="timeCal">
+							游戏时间:
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<script src="bird.js"></script>
+	</body>
+</html>
